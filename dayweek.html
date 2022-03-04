@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1><center>Day</center></h1>
+    <script>
+        function week(){
+            var d=new Date();
+            console.log(d.getDay)
+            var week=['sunday','monday','tuesday','wensday','thursday','friday','saturday'];
+            // document.write(week[date.getDay()])  
+            // var day1=w[day];
+           document.getElementById("demo").innerHTML=week[d.getDay()];
+          } 
+            function month(){
+              var m=new Date();
+              // document.write(month)
+              console.log(m.getMonth)
+              var month=['january','february','march','april','may','june','july','august','september','october','november','december'];
+              // var a=[month.getMonth()]
+          document.getElementById("demo").innerHTML=month[m.getMonth()];
+        
+            }
+            function hours(){
+              var d=new Date();
+              console.log(d.getDay)
+              document.getElementById("demo").innerHTML=d.getHours();
+            }
+           
+            function minute(){
+              var d=new Date();
+              console.log(d.getDay)
+              document.getElementById("demo").innerHTML=d.getMinutes();
+            }
+
+            
+            function second(){
+              var d=new Date();
+              console.log(d.getDay)
+              document.getElementById("demo").innerHTML=d.getSeconds();
+            }
+
+            function time(){
+              var d=new Date();
+              var h=d.getHours();
+              var m=d.getMinutes();
+              if(h>12){
+                console.log(h+m)
+                document.getElementById("demo").innerHTML=h+":"+m+""+"PM";
+              }
+              else{
+                console.log(h+m)
+                document.getElementById("demo").innerHTML=h+":"+m+""+"AM"
+              }
+            }
+        </script>
+
+</head>
+
+<body style="border: 2px solid black; width: 300px; background-color:crimson;">
+  <center>
+  <p id="demo"></p>
+ 
+  <button style="background-color: red;" onclick="week()">day</button><br><br>
+  <button style="background-color: red;" onclick="month()">Month</button><br><br>
+  <button style="background-color: red;" onclick="time()">Time</button><br><br>
+</body>
+</center>
+</html>

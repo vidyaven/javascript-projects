@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+var x=document.getElementById("input");
+addEventListener("mouseover",calculate)
+    function calculate()
+    {
+    var input=document.getElementById("input").value;
+    var len=input.length;
+    var output1=document.getElementById("output1").innerHTML="total chracters="+len;
+    var count=input.match(/\w+/g);
+    var res=count.length;
+    var output2=document.getElementById("output2").innerHTML="total words="+res;
+}
+    </script>
+<style>
+    .wrapper{
+        height: 300px;
+        width: 800px;
+        background:rgb(3, 61, 3);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+   button{
+       height: 40px;
+       width: 200px;
+       margin-left: 300px;
+      margin-top: 10%;
+      background-color: red;
+   }
+   textarea{
+       width: 500px;
+       margin-left: 20%;
+   }
+   #output1{
+       color: blue;
+   }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Find The Word Count</h1>
+<textarea id="input" cols="30" rows="10"></textarea><br><br>
+<button onclick="calculate()">Calculate</button>
+
+<p id="output1"></p>
+<p id="output2"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function futn()
+{
+    var feet=document.getElementById("feet").value;
+    var inches=document.getElementById("inch").value;
+    console.log(feet)
+    console.log(inches)
+if(feet==""||inches=="")
+{
+    console.log("pls enter value")
+    document.getElementById("demo").innerHTML="pls enter value"
+    
+}
+else if(feet<0){
+    console.log("pls enter feet value")
+    document.getElementById("demo").innerHTML="pls enter feet value"
+}
+else if(inches<0||inches>=12)
+{
+    console.log("pls enter inch value between 0-12")
+    document.getElementById("demo").innerHTML="pls enter inch value between 0-12"
+}
+else{
+    var totalinches=(feet*12)+inches;
+    // console.log(`${totalinches} cm1`)
+    document.getElementById("feet").value=''
+    document.getElementById("inch").value=''
+    document.getElementById("demo").innerHTML="your number is  :"+totalinches+"cm"
+}
+}
+    </script>
+
+    <style>
+        #first{
+            background-color: black;
+            height: 300px;
+            width: 300px;
+            color: white;
+        }
+        #btn{
+            background-color: red;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <div id="first">
+<h1>Height Converter</h1>
+<label>Feet:</label>
+<input type="text" id="feet"><br><br>
+<label>Inches:</label>
+<input type="text" id="inch"><br><br>
+<input type="button" id="btn" value="Convert to cm" onclick="futn()"><br><br>
+    </div>
+    <p id="demo"></p>
+   <div id="result"></div>
+</center>
+</body>
+</html>

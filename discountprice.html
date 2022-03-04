@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: crimson;
+        }
+        .first{
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+        }
+        h1{
+            margin-top: 20%;
+        }
+        button{
+            border-radius: 5%;
+            border-end-end-radius: 5%;
+            
+        }
+    </style>
+</head>
+<body>
+ <center>
+    <div class="first">
+   <table>
+   <h1><u> Discount Sale..</u></h1>
+      <tr><td>Product Name</td><td><input type="text" id="product"></td></tr><br><br>
+       <tr><td>Product Price</td><td><input type="text" id="price"></td></tr><br><br>
+       <tr><td id="sale1">Season Sale</td><td><select id="sale">
+           <option value="summer">Summer Sale</option>
+           <option value="newyear">New Year Sale</option>
+           <option value="onam">Onam Sale</option>
+       </select></td></tr><br><br>
+       <tr><td><td><button id="btn" onclick="discount()">Discount Price</button></td></td></tr>
+  
+    </table>
+</div>
+<p id="p1"></p>
+<p id="result"></p>
+</center>
+<script>
+    function discount()
+    {
+        // var name=document.getElementById("product").value;
+        var p=document.getElementById("price").value;
+        console.log(p)
+        var s=document.getElementById("sale").value;
+        console.log(s)
+        var discnt;
+        if(s=="summer"){
+            document.getElementById("p1").innerHTML="10% of discount for the product"
+            discnt=(p-(p*0.1));
+        }
+        else if(s=="newyear"){
+document.getElementById("p1").innerHTML="15% of discount for the product"
+           discnt=(p-(p*0.5));
+        }
+        else{
+document.getElementById("p1").innerHTML="20% of discount for the product"
+         discnt=(p-(p*0.2));
+        }
+        document.getElementById("result").innerHTML="the discount of the price is:"+discnt
+    }
+</script>
+
+</body>
+</html>

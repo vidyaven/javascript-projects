@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var random=Math.floor(Math.random()*100)
+        function funtn()
+        {
+            var a=document.getElementById("guess").value;
+            if(random==a)
+            {
+                document.getElementById("demo").innerHTML="congratz..you got a correct answer";
+            }
+            else if(random>a)
+            {
+                document.getElementById("demo").innerHTML="your number is Toosmall Try again.. ";
+            }
+            else{
+                document.getElementById("demo").innerHTML="your number is greater Try again.. ";
+            }
+        }
+    </script>
+<style>
+    #a{
+        background-color:crimson;
+        height: 350px;
+        width: 500px;
+    }
+    h1{
+        color: white;
+    }
+    label{
+        color:white;
+    }
+    #demo{
+        color:white;
+    }
+    #btn{
+        background-color:gold;
+    }
+    #img1{
+        height: 100px;
+        width: 280px;
+    }
+</style>
+
+</head>
+<body>
+    <center>
+    <div id="a">
+<h1>GUESS THE NUMBER</h1>
+<p id="b">if you guess the number between1-100<br>you are the winner of the game..!!!</p><br>
+<label>Your gussing number:</label>
+<input type="text" id="guess">
+<input type="button" id="btn" value="button" onclick="funtn()">
+<br><br>
+<img src="guess.jpg" alt="" id="img1">
+<p id="demo"></p>
+    </div>
+</center>
+
+
+
+</body>
+</html>

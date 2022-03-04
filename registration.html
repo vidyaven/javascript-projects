@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+form{
+    background-color: skyblue;
+    color:black;
+    height: 700px;
+    width: 500px;
+}
+#btn{
+    background-color: red;
+    color: white;
+}
+#demo{
+    color:rgb(224, 18, 18);
+}
+#pwrd{
+    color:rgb(224, 18, 18);
+}
+#nme{
+    color:rgb(224, 18, 18);
+}
+#addr1{
+    color:rgb(224, 18, 18);
+}
+#maile{
+    color:rgb(224, 18, 18);
+}
+#gendr{
+    color:rgb(224, 18, 18);
+}
+#Language{
+    color:rgb(224, 18, 18);
+}
+#district{
+    color:rgb(224, 18, 18);
+}
+
+
+
+    </style>
+
+    <script src="reg.js"></script>
+
+</head>
+<body>
+    <center>
+    <form name="reg">
+        <table>
+        <h1>REGISTRATION FORM</h1>
+
+        <tr>
+            <td> User id: </td>
+      <td><input type="text" id="ui"></td><br><br>
+      <td><p id="demo"></p></td>
+   </tr>
+
+<tr>
+        <td>Password:</td>
+       <td> <input type="password" id="pasword"maxlength="50" minlength="10"></td>
+       <td><p id="pwrd"></p></td>
+    </tr>
+       <tr>
+           <td>Name:</td>
+               <td><input type="text" id="name"maxlength="50" minlength="10"><br><br></td>
+              <td> <p id="nme"></p></td>
+            </tr>
+        <tr>
+            <td>Address:</td>
+              <td> <input type="text" id="addr"><br><br></td>
+              <td><p id="addr1"></p></td>
+        </tr>
+       <tr>
+           <td>Email:</td>
+           <td><input type="email" id="mail"><br><br></td>
+          <td><p id="maile"></p></td> 
+        </tr> 
+        <tr>
+            <td>Sex:</td>
+            <td><input type="radio" id="male" name="gen">Male<input type="radio" name="gen" id="female">Female<br><br></td>
+            <td><p id="gendr"></p></td>
+            </tr>
+    <tr>
+        <td>Language:</td>
+        <td><input type="checkbox" name="select" id="check1">English <input type="checkbox" id="check2">Malayalam<br><br></td>
+        <td><p id="Language"></p></td>
+       </tr>
+     <tr>
+         <td>
+             <td>
+            <select id="selection">
+                <option value="">District</option>
+                
+                <option value="1">Malappuram</option>
+                <option value="2">Kozhikod</option>
+                <option value="3">Ernamkulam</option>
+                </select><br><br>
+            </td>
+    </td>
+    <td> <p id="district"></p></td>
+</tr>
+       <tr>
+     <td> <td><input type="button" id="btn" value="Submit" onclick="check()"><br><br></td></td>
+    </tr>
+    </table>
+    </form>
+  
+</center>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      
+
+</head>
+<style >
+#b{
+    height: 50px;
+}
+button{
+    height: 60px;
+    width: 50px;
+border-radius: 10%;
+color:white;
+background-color:black;
+}
+#bu{
+    height: 120px;
+    background-color:rgb(131, 19, 19);
+    width: 50px;
+}
+form{
+    background-color:skyblue;
+    width: 280px;
+
+}
+#d{
+    background-color: gray;
+    height: 60px;
+    width: 50px;
+}
+#c{
+    background-color: rgb(12, 141, 12);
+}
+#button1{
+    height: 60px;
+    width: 50px;
+    background-color: black;
+    color: white;
+
+}
+#a{
+    height: 30px;
+    width: 150px;
+}
+
+
+
+
+</style>
+<body>
+    <div class="container" id="a">
+        <form action="" name="fname"> 
+<table border="2px">
+     <tr><th colspan="5" id="b"><input type="text" id="a" name="t1">
+    </th></tr> 
+<tr>
+    <!-- <td><input type="button" value="c" onclick="fname.t1.value+='c'"></td> -->
+   <td><input type="button" value="c" id="d"  onclick="fname.t1.value=''"></td> 
+   <td><input type="button"value="1" id="button1" onclick="fname.t1.value+='1'"></td>
+
+   <td><input type="button"value="2" id="button1"  onclick="fname.t1.value+='2'"></td>
+   <td><input type="button"value="3" id="button1"  onclick="fname.t1.value+='3'"></td>
+   <td><input type="button"value="+" id="d" onclick="fname.t1.value+= '+'"></td>
+</tr>
+<tr>
+    <td><input type="button"value="%"id="d"  onclick="fname.t1.value+='%'"></td> 
+   <td><input type="button"value="4"  id="button1"  onclick="fname.t1.value+='4'"></td>
+   <td><input type="button"value="5"  id="button1"  onclick="fname.t1.value+='5'"></td>
+   <td><input type="button"value="6" id="button1"   onclick="fname.t1.value+='6'"></td>
+   <td><input type="button"value="-" id="d" onclick="fname.t1.value+='-'"></td>
+  
+</tr>
+<tr>
+  
+   <td><input type="button"value="*" id="d" onclick="fname.t1.value+='*'"></td>
+   <td><input type="button"value="7" id="button1"  onclick="fname.t1.value+='7'"></td>
+   <td><input type="button"value="8" id="button1"  onclick="fname.t1.value+='8'"></td>
+   <td><input type="button"value="9" id="button1"  onclick="fname.t1.value+='9'"></td>
+   <td rowspan="2"><input type="button" id="bu" value="=" onclick="fname.t1.value=eval(fname.t1.value)"></td>
+</tr>
+<tr>
+    
+   <td><input type="button"value="/" id="d" onclick="fname.t1.value+='/'"></td>
+   <td><input type="button"value="0" id="button1"  onclick="fname.t1.value+='0'"></td>
+   <td><input type="button"value="sqrt"id="d" onclick="fname.t1.value=Math.sqrt(fname.t1.value)"></td>
+   <td><input type="button"value="x^2 "id="d" onclick="fname.t1.value=Math.pow(fname.t1.value,2)"></td>
+</tr>
+</table>
+</form>
+    </div>
+</body>
+</html>

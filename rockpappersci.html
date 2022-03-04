@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script>
+     var uscore=0
+     var cscore=0
+     c=0
+      function rock()
+      {
+          var rock=0
+          var random=Math.floor(Math.random()*3)
+          if(random==0)
+          {
+              alert("it is Tie")
+              
+          }
+          else if(random==1)
+          {
+              alert("computer win")
+              cscore++;
+              document.getElementById("computercount").innerHTML=cscore;
+          }
+        else{
+          alert("user win")
+              uscore++;
+              document.getElementById("usercount").innerHTML=uscore;
+                          }
+                          c++
+                          if(c>4)
+                          {
+                              alert("game over")
+                            if(uscore>cscore)
+                            {
+                                alert("winner is user")
+                            }
+                            else{
+                               alert("computer is winner")
+                            }
+                          }
+                          }
+function papper()
+      {
+        var papper=1
+          var random=Math.floor(Math.random()*3)
+          if(random==1)
+          {
+              alert("it is Tie")
+          }
+          else if(random==0)
+          {
+              alert("computer win")
+              cscore++;
+              document.getElementById("computercount").innerHTML=cscore;
+          }
+        else{
+          alert("user win")
+              uscore++;
+              document.getElementById("usercount").innerHTML=uscore;
+      
+                          }
+                          c++
+                          if(c>4)
+                          {
+                              alert("game over")
+                            if(uscore>cscore)
+                            {
+                                alert("winner is user")
+                            }
+                            else{
+                               alert("computer is winner")
+                            }
+                          }
+                          }
+function scissor()
+      {
+          var scissor=2
+          var random=Math.floor(Math.random()*3)
+          if(random==2)
+          {
+              alert("it is Tie")
+          }
+          else if(random==0)
+          {
+              alert("user win")
+              cscore++;
+              document.getElementById("computercount").innerHTML=cscore;
+          }
+        else{
+          alert("computer win")
+              uscore++;
+              document.getElementById("usercount").innerHTML=uscore;
+      
+                          }
+                          c++
+                          if(c>4)
+                          {
+                              alert("game over")
+                            if(uscore>cscore)
+                            {
+                                alert("winner is user")
+                            }
+                            else{
+                               alert("computer is winner")
+                            }
+                          }
+                          
+                    
+                          }
+
+
+    
+
+
+
+  </script>
+
+  <style>
+    #score{
+      background-color:rgb(75, 71, 71);
+      height: 150px;
+      width: 300px;
+    }
+    #c{
+      background-color: rgb(206, 63, 11);
+      height: 80px;
+      width: 300px;
+    }
+    #btn1{
+      background-color: blue;
+      color: white;
+    }
+    #btn2{
+      background-color: blue;
+      color: white;
+    }
+    #btn3{
+      background-color: blue;
+      color: white;
+    }
+    #main{
+      background-color: black;
+      color: white;
+      height: 500px;
+      width: 500px;
+    }
+    #a{
+      background-color: red;
+    }
+    #img{
+      height: 100px;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+        <div id="main">
+        
+    <div id="a">
+    
+<h1>Rock Papper Scissor</h1>
+</div>
+<div id="score">
+<h3>USER SCORE</h3><p id="usercount">0</p>
+<h3>COMPUTER SCORE</h3><p id="computercount">0</p>
+</div>
+<div id="c">
+<h2>Choose an option</h2>
+</div><br>
+<input type="button" id="btn1" value="ROCK" onclick="rock()">
+<input type="button" id="btn2" value="PAPPER" onclick="papper()">
+<input type="button" id="btn3" value="SCISSOR" onclick="scissor()">
+<br><br>
+<img src="rock.jpg" alt="" id="img">
+</center>
+</div>
+
+</body>
+</html>
